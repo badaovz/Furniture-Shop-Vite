@@ -2,8 +2,6 @@ import { FaMinus, FaPlus } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 
 function AmountButton({ amount, increase, decrease }) {
-    console.log('sss sss');
-
     return (
         <div className='amountButton'>
             <button className='amountButton__dec' onClick={decrease}>
