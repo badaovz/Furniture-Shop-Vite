@@ -12,12 +12,13 @@
     transform: translateX(-100%);
     transition: $transition;
 
-    @include mobile {padding: 1.6rem;}
-
-    &.show {
-        transform: translateX(0)
+    @include mobile {
+        padding: 1.6rem;
     }
 
+    &.show {
+        transform: translateX(0);
+    }
 
     &__header {
         display: grid;
@@ -25,13 +26,15 @@
         gap: 0 2rem;
         align-items: center;
         &__logo {
-            height: 60px;
+            height: 100px;
         }
 
         &__close {
             font-size: 3rem;
             color: $red-color-dark;
-            @include mobile {font-size: 2.5rem;}
+            @include mobile {
+                font-size: 2.5rem;
+            }
         }
     }
 
@@ -48,7 +51,7 @@
 
     &__cart-login {
         margin-top: 4rem;
-        @include flex( end, space-between);
+        @include flex(end, space-between);
         @include mobile {
             align-items: center;
             line-height: 2.6rem;
@@ -60,11 +63,11 @@
             margin-right: 2rem;
             &__icon {
                 text-align: center;
-                margin-left: .3rem;
+                margin-left: 0.3rem;
                 position: relative;
 
                 &__total {
-                    @include flex( center, center);
+                    @include flex(center, center);
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -75,8 +78,7 @@
                     border-radius: 50%;
                     background-color: $bg-btn-color;
                     color: $white-color;
-                    font-size: .8rem;
-                    
+                    font-size: 0.8rem;
                 }
             }
         }
@@ -85,9 +87,8 @@
             color: $txt-color-primary;
             font-size: 1.5rem;
             &__icon {
-                margin-left: .3rem;
+                margin-left: 0.3rem;
             }
         }
-
     }
 }
